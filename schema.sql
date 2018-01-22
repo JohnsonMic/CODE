@@ -1,2 +1,2 @@
 DROP DATABASE IF EXISTS `glossary`;
-CREATE DATABASE `glossary`;
+CREATE DATABASE `codeapp_db`;

@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "sandtown10!",
+    "password": "Sandtown10!",
     "database": "codeapp_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
