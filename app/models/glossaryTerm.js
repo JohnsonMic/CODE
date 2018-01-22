@@ -8,16 +8,21 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    language: {
+    lang: {
       type: DataTypes.STRING,
       allowNull: false,
 	},
     defintion: {
       type: DataTypes.TEXT,
       allowNull: false,
-    },
+    }
+    // createdAt: {
+    // 	type: DataTypes.DATE,
+    // 	defaultValue: sequelize.literal('NOW()'),
+    // 	allowNull: true,
+    // }
 
-	});
+	}, {timestamps: false});
 
   return GlossaryTerm;
 };   

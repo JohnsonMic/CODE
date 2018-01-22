@@ -13,10 +13,47 @@
     // Then add the character to the database using sequelize
     glossaryterm.create({
       routeName: routeName,
-      term: character.name,
-      language: character.role,
-      definition: character.age,
-     
+      term: glossary.name,
+      lang: glossary.language,
+      definition: glossary.definition,
+      // POST route for saving a new post
+  app.post("/api/posts", function(req, res) {
+    console.log(req.body);
+    db.Post.create({
+      routeName: routeName,
+      term: glossary.name,
+      lang: glossary.language,
+      definition: glossary.definition
+    })
+    .then(function(dbPost) {
+      res.json(dbPost);
+    });
+  });
+
+  // DELETE route for deleting posts
+  app.delete("/api/posts/:id", function(req, res) {
+    db.Post.destroy({
+      where: {
+        id: req.params.id
+      }
+    })
+    .then(function(dbPost) {
+      res.json(dbPost);
+    });
+  });
+
+  // PUT route for updating posts
+  app.put("/api/posts", function(req, res) {
+    db.Post.update(req.body,
+      {
+        where: {
+          id: req.body.id
+        }
+      })
+    .then(function(dbPost) {
+      res.json(dbPost);
+    });
+  });
     });
   });
 };
