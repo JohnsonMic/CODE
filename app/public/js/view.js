@@ -7,6 +7,7 @@
 $(function(){
   $(".dropdown-menu").on("mouseup", '*', function() {
     var searchTerm = $(this).attr('data-value');
+<<<<<<< HEAD
     var youtubeSearch = $(this).attr('data-search');
     fetch (
         'https://api.stackexchange.com/2.2/questions?pagesize=5&tagged='+ searchTerm + '&site=stackoverflow'
@@ -41,3 +42,23 @@ $(function(){
     searchYoutube(youtubeSearch)
   })
 })
+=======
+
+    fetch (
+        'https://api.stackexchange.com/2.2/questions?pagesize=5&tagged='+ searchTerm + '&site=stackoverflow'
+    )
+    .then (function (response) {
+        if (response.ok) { return response.json(); }
+    } )
+    .then (function(rJsn) {
+      $('ul.articles').empty();
+      rJsn.items.forEach(function(obj,i) {
+        console.log('EACH OBJECT', obj)
+        $(".articles").append('<li ><a href= '+ obj.link + '>'+ obj.title + '</a></li>')
+      })
+    });
+      console.log($(this).attr('data-value'))
+  });
+})
+
+>>>>>>> 98521b7e5d8e64a46b8551ef1578187339c2501f
