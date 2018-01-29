@@ -22,8 +22,8 @@ module.exports = function(app) {
           routeName: req.params.GlossaryTerm
         }
       }).then(function(result) {
-        console.log(result)
-         res.json(result);
+        console.log(result.dataValues)
+         res.json(result.dataValues);
       });
     }
   });

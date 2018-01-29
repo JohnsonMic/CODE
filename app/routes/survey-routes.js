@@ -1,12 +1,7 @@
-
-// If a user sends data to add a new character...
-  app.post("/api/new", function(req, res) {
-    // Take the request...
-    var glossaryterm = req.body;
-    var db = require("../models");
-
-    module.exports = function(app) {
-
+var db = require("../models");
+var glossaryterm = req.body;
+    
+    
     // Create a routeName
 
     // Using a RegEx Pattern to remove spaces from character.name
@@ -19,9 +14,11 @@
       term: glossary.name,
       lang: glossary.language,
       definition: glossary.definition,
+})
+
       // POST route for saving a new post
   app.post("/api/GlossaryTerm", function(req, res) {
-    console.log(req.body);
+    console.log("body " + req.body );
     db.GlossaryTerm.create({
       routeName: routeName,
       term: glossary.name,
@@ -46,8 +43,8 @@
   });
 
   // PUT route for updating posts
-  app.put("/api/GlossaryTerm", function(req, res) {
-    db.Post.update(req.body,
+ app.put("/api/GlossaryTerm", function(req, res) {
+   db.Post.update(req.body,
       {
         where: {
           id: req.params.GlossaryTerm
@@ -57,6 +54,5 @@
       res.json(dbGlossaryTerm);
     });
   });
-    });
-  });
-};
+  
+

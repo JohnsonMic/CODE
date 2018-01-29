@@ -1,143 +1,132 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-	<meta charset="UTF-8">
-	<title>Study Guide</title>
-	<!-- Latest compiled and minified CSS & JS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-
-
-</head>
-<body>
-	
-	<div class="container">
-		<div class="jumbotron">
-			<h1>C.O.D.E.</h1>
-			<h3>Coding Online Done Easy!</h3>
-			<hr>
-		</div>
-		<div class="row">
-
-			<div class="col-lg-12">
-
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title"><strong>Glossary</strong></h3>
-					</div>
-					<div class="btn-group">
-    <button type="button" class="btn btn-primary">Select Term</button>
-    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <span class="caret"></span>
-    <span class="sr-only">Toggle Dropdown</span>
-    </button>
-    <ul id="term" class="dropdown-menu">
-      <option value=""></option>
-        <li data-value='Class' data-search='html attribute class'>CLASS</li>
-    	<li data-value='id' data-search='html attribute id'>ID</li>
-    	<li data-value='href'>HREF</li>
-    	<li data-value='basic'>Basic Formatting</li>
-    	<li data-value='body'>Body</li>
-    	<li data-value='comments'>Comments</li>
-    	<li data-value='div'>Div</li>
-    	<li data-value='head'>Head</li>
-    	<li data-value='headings'>Headings</li>
-    	<li data-value='horizontal rules'>Horizontal Rules</li>
-    	<li data-value='html'>HTML</li>
-    	<li data-value='hyperlinks'>Hyperlinks</li>
-    	<li data-value='images'>Images</li>
-    	<li data-value='line breaks'>Line Breaks</li>
-    	<li data-value='links'>Links</li>
-    	<li data-value='action'>Action</li>
-    	<li data-value='unordered lists'>Unordered Lists</li>
-    	<li data-value='ordered lists'>Ordered Lists</li>
-    	<li data-value='paragraphs'>Paragraphs</li>
-    	<li data-value='semantic formatting'>Semantic Formatting</li>
-    	<li data-value='tables'>Tables</li>
-    	<li data-value='tags-elements'>Tags-Elements</li>
-    	<li data-value='title'>Title</li>
-    	<li data-value='properties'>Properties</li>
-    	<li data-value='defining many properties'>DEFINING MANY PROPERTIES</li>
-    	<li data-value='margin'>MARGIN</li>
-    	<li data-value='font family'>Font Family</li>
-    	<li data-value='selectors'>Selectors</li>
-    	<li data-value='class name selectors'>CLASS NAME SELECTORS</li>
-    	<li data-value='element selectors'>ELEMENT SELECTORS</li>
-    	<li data-value='id selectors'>ID SELECTORS</li>
-    	<li data-value='attribute selectors'>ATTRIBUTE SELECTORS</li>
-    	<li data-value='child selectors'>CHILD SELECTORS</li>
-    	<li data-value='universal selevtor'>UNIVERSAL SELECTOR</li>
-        </option>
-    </ul>
-  </div>					
-  		<div class="panel-body">
-				<input type="text" id="character-search" class="form-control">
-						<br>
-						<div class="text-right">
-							<button type="submit" class="btn btn-primary btn-md" id="search-btn"><span class="glyphicon glyphicon-search"></span> Submit </button>
-							
+	<head>
+		<meta charset="UTF-8">
+		<title>Study Guide</title>
+		<!-- Latest compiled and minified CSS & JS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+	</head>
+	<body>
+		
+		<div class="container">
+			<div class="jumbotron">
+				<h1>C.O.D.E.</h1>
+				<h3>Coding Online Done Easy!</h3>
+				<hr>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title"><strong>Glossary</strong></h3>
 						</div>
-						    
+						<div class="btn-group">
+							<button type="button" class="btn btn-primary">Select Term</button>
+							<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<span class="caret"></span>
+							<span class="sr-only">Toggle Dropdown</span>
+							</button>
+							<ul id="term" class="dropdown-menu">
+								<option value=""></option>
+								<li data-value='Class' data-search='html attribute class'>CLASS</li>
+								<li data-value='id' data-search='html attribute id'>ID</li>
+								<li data-value='href'>HREF</li>
+								<li data-value='basic'>Basic Formatting</li>
+								<li data-value='body'>Body</li>
+								<li data-value='comments'>Comments</li>
+								<li data-value='div'>Div</li>
+								<li data-value='head'>Head</li>
+								<li data-value='headings'>Headings</li>
+								<li data-value='horizontalrules'>Horizontal Rules</li>
+								<li data-value='html'>HTML</li>
+								<li data-value='hyperlinks'>Hyperlinks</li>
+								<li data-value='images'>Images</li>
+								<li data-value='line breaks'>Line
+								Breaks</li>
+								<li data-value='links'>Links</li>
+								<li data-value='action'>Action</li>
+								<li data-value='unordered lists'>Unordered Lists</li>
+								<li data-value='ordered lists'>Ordered Lists</li>
+								<li data-value='paragraphs'>Paragraphs</li>
+								<li data-value='semantic formatting'>Semantic Formatting</li>
+								<li data-value='tables'>Tables</li>
+								<li data-value='tags-elements'>Tags-Elements</li>
+								<li data-value='title'>Title</li>
+								<li data-value='properties'>Properties</li>
+								<li data-value='defining many properties'>DEFINING MANY PROPERTIES</li>
+								<li data-value='margin'>MARGIN</li>
+								<li data-value='font family'>Font Family</li>
+								<li data-value='selectors'>Selectors</li>
+								<li data-value='class name selectors'>CLASS NAME SELECTORS</li>
+								<li data-value='element selectors'>ELEMENT SELECTORS</li>
+								<li data-value='id selectors'>ID SELECTORS</li>
+								<li data-value='attribute selectors'>ATTRIBUTE SELECTORS</li>
+								<li data-value='child selectors'>CHILD SELECTORS</li>
+								<li data-value='universal selevtor'>UNIVERSAL SELECTOR</li>
+							</option>
+						</ul>
 					</div>
-				</div>
-			</div>			
-		</div>
-		<div class="row">
-
-			<div class="col-lg-12">
-
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title">
-							<strong>Articles</strong></h3><ul class='articles'></ul>
-					</div>
-					<div class="panel-body" id="well-section">
-
-
-						<!-- Content will go in here -->
-
+					<div class="panel-body">
+						<div class="panel-body" id="well-section">
+						</div>
+						<br>
+						<h1 id="well-section-heading"></h1>
+						<h2 id="well-section-description"> </h2>
+						<button type="reset">Reset
+						
+						</button>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
-
 			<div class="col-lg-12">
-
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title"><strong>Tutorials</strong></h3>
-<
-					</div>
-					<div class="panel-body" id="well-section">
-
-						<!-- Content will go in here -->
-
-					</div>
+						<h3 class="panel-title">
+					<strong>Articles</strong></h3><ul class='articles'></ul>
+				</div>
+				<div class="panel-body" id="well-section">
+					
+					<!-- Content will go in here -->
 				</div>
 			</div>
 		</div>
 	</div>
-
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong>Tutorials</strong></h3>
+					<
+				</div>
+				<div class="panel-body" id="well-section">
+					<!-- Content will go in here -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <script type="text/javascript">
-
-$("#term li a").on("click", function(){
+$("#term li").on("click", function(){
 	
 	var glossaryTerm=$(this).text()
-	console.log(glossaryTerm)
-		 $.ajax({
-     method: "GET",
-      url: "/api/" + glossaryTerm 
-   }).then(function(err, res){
-  		
-		console.log(res)
-		$('#well-section').append("glossaryTerm")
-
-	})
+	// $('#well-section').append(glossaryTerm)
+		$.ajax({
+method: "GET",
+url: "/api/" + glossaryTerm
+}).done(function (response) {
+		console.log(response);
+		$("#well-section-heading").append(response.term)
+		// $("#well-section-description").append(response.lang)
+		$("#well-section-description").append(response.defintion)
+		
+})
 })
 	
 </script>

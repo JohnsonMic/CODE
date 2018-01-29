@@ -7,7 +7,7 @@ INSERT INTO glossary ( routeName,term, language, definintion,) VALUES
 ("Comments","Comments", "HTML","HTML comments are sometimes used in code to explain parts of the markup. They are similar to comments in other languages. Users do not see comments in their browser."),
 ("Div","Div","HTML","A block level container (or \*division\* of the web page) for content with no semantic meaning."),
 ("Head","Head", "HTML","Tag that surrounds important content that is invisible to the user, but is important to the browser. Elements within this tag contain metadata about the page and links to stylesheets, scripts, etc."),
-("Headings","Headings", "HTML","Heading elements like <h1>, <h2>, <h3>, ... allow you to use six levels of document headings, ranging from largest to smallest, breaking up the document into logical sections. For example, the word 'Headings' above is wrapped in a <h2> tag." ,"<h1> This is a header! </h1>"),
+("Headings","Headings", "HTML","Heading elements like <h1>, <h2>, <h3>, ... allow you to use six levels of document headings, ranging from largest to smallest, breaking up the document into logical sections. For example, the word 'Headings' above is wrapped in a <h2> tag."),
 ("HorizontalRules","Horizontal Rules", "HTML","This tag creates a black line one pixel thick that runs the all the way across its container. It can be styled to look differently with CSS."),
 ("HTML","HTML", "HTML","HTML stands for Hyper Text Markup Language. It is the language used to create all websites."),
 ("Hyperlinks","Hyperlinks","HTML","Hyperlinks (or just links) take the user to another webpage when they click on it. The most common attribute used with links is href, which tells the browser where the link goes."),
