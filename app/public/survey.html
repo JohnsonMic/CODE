@@ -6,7 +6,7 @@
     <title>C.O.D.E. Survey</title>
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./app/asset/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../asset/css/style.css">
 
     <!-- Latest compiled and minified CSS & JS -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script> -->
@@ -182,22 +182,26 @@
             <script type="text/javascript">
             $(document).ready(function() {
             $("#add-btn").on("click", function() {
-           
-             var GlossaryTerm = $("#name").val();
-             var language = $("#language").val();
-             var definition = $("#definition").val();
-            console.log(GlossaryTerm);
-            console.log(language);
-            console.log(definition);
+            var termdata ={
+                glossaryterm: $("#GlossaryTerm").val(),
+                lang :$("#language").val(),
+                definition: $("#definition").val(),
+            }
+             // var GlossaryTerm = $("#name").val();
+             // var language = $("#language").val();
+             // var definition = $("#definition").val();
+            // console.log(GlossaryTerm);
+            // console.log(language);
+            // console.log(definition);
         
             // });
-            $.ajax({console.log(GlossaryTerm) {
-                method: "POST",
-                url: "/api/" + GlossaryTerm
-            }).done(function(response) {
-                console.log(res)
+            $.post("/api/GlossaryTerm" ,termdata, function(data) {
+                console.log("This is res: "+res);
 
-            })
+            // }).done(function(response) {
+                // console.log(res)
+
+            });
              })
           });
  </script>
