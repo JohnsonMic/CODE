@@ -1,6 +1,8 @@
 var db = require("../models");
-var glossaryterm = req.body;
-    
+var routeName= routeName;
+var term= glossaryname
+var lang=language
+var definition[=  glossarydefinition
     
     // Create a routeName
 
@@ -9,16 +11,12 @@ var glossaryterm = req.body;
    // var routeName = character.name.replace(/\s+/g, "").toLowerCase();
 
     // Then add the character to the database using sequelize
-    glossaryterm.create({
-      routeName: routeName,
-      term: glossary.name,
-      lang: glossary.language,
-      definition: glossary.definition,
-})
+
 
       // POST route for saving a new post
   app.post("/api/GlossaryTerm", function(req, res) {
-    console.log("body " + req.body );
+    console.log("body " + req);
+    console.log (req);
     db.GlossaryTerm.create({
       routeName: routeName,
       term: glossary.name,

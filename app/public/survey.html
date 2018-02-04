@@ -159,6 +159,10 @@
                                 <label for="">Definition</label>
                                 <input type="text" class="form-control" id="definition" placeholder="">
                             </div>
+                            <div class="form-group">
+                                <label for="">Term Added</label>
+                                <input type="text" class="form-control" id="definition" placeholder="">
+                            </div>
                         </form>
                         <br>
                         <div class="text-right">
@@ -184,8 +188,8 @@
             $("#add-btn").on("click", function() {
             var termdata ={
                 glossaryterm: $("#GlossaryTerm").val(),
-                lang :$("#language").val(),
-                definition: $("#definition").val(),
+                lang: $("#language").val(),
+                definition: $("#definition").val()
             }
              // var GlossaryTerm = $("#name").val();
              // var language = $("#language").val();
