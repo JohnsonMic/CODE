@@ -10,6 +10,9 @@ var db = require("../models");
 
 
       // POST route for saving a new post
+
+      module.exports = function(app) {
+
   app.post("/api/GlossaryTerm", function(req, res) {
     console.log("body " + req);
     console.log (req);
@@ -48,5 +51,5 @@ var db = require("../models");
       res.json(dbGlossaryTerm);
     });
   });
-  
+  }
 
