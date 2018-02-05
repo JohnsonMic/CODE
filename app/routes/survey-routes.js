@@ -1,9 +1,5 @@
 var db = require("../models");
-var routeName= routeName;
-var term= glossaryname
-var lang=language
-var definition =  glossarydefinition
-    
+
     // Create a routeName
 
     // Using a RegEx Pattern to remove spaces from character.name
