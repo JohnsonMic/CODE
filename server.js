@@ -1,10 +1,11 @@
 var express = require("express");
+var mysql = require("mysql");
 var bodyParser = require("body-parser");
 var db = require("./app/models");
 // Sets up the Express App
 // =============================================================
 var app = express();
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3306;
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
