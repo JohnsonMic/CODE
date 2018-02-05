@@ -2,7 +2,7 @@ var db = require("../models");
 var routeName= routeName;
 var term= glossaryname
 var lang=language
-var definition[=  glossarydefinition
+var definition =  glossarydefinition
     
     // Create a routeName
 
