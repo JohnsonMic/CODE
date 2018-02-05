@@ -1,5 +1,5 @@
 var express = require("express");
-var mysql = require("mysql");
+var mysql = require("mysql2");
 var bodyParser = require("body-parser");
 var db = require("./app/models");
 // Sets up the Express App
